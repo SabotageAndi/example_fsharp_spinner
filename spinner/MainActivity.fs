@@ -68,6 +68,4 @@ type MainActivity () =
 
         spinner.ItemSelected.Add(fun args ->
             let selectedItem = List.nth data args.Position
-            this.FindViewById<TextView>(Resource_Id.selectedItem).Text <- selectedItem.Name
-
-            ignore())
+            this.FindViewById<TextView>(Resource_Id.selectedItem).Text <- selectedItem.Name)
